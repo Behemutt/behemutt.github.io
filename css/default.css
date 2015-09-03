@@ -30,12 +30,12 @@
 		max-width:100%;
 	}
 	form,
-	fieldset{
+	fieldset {
 		border:0;
 		padding:0;
 		margin:0;
 	}
-	h1{
+	h1 {
 		font:4.285em/1.067em 'PT Sans', Arial, Helvetica, sans-serif; /*60px/64px*/
 		margin:0 0 0.167em;
 		text-align:center;
@@ -56,7 +56,7 @@
 		text-align:center;
 		color: rgb(245,245,245);
 	}
-	.subHeading{
+	.subHeading {
 		display:block;
 		font:2.357em/1.151em 'PT Sans', Arial, Helvetica, sans-serif; /*33px/38px*/
 		margin:0 0 1em;
@@ -110,12 +110,11 @@
 		border:0;
 	}
 	.center {
-		max-width:960px;
-		vertical-align: center;
-		width:100%;
+		width: 100%;
 		height: auto;
-		margin:auto auto;
+		margin: auto auto;
 	}
+
 	.hidden{display:none;}
 	.box-main:after,
 	.center:after {
@@ -134,6 +133,7 @@
 		margin-left:1em;
 	}
 	.fullWidth{width:100%;}
+	.fullHeight{height:100%;}
 	.fullWidth img{width:100%;}
 	.row{
 		width:100%;
@@ -158,19 +158,19 @@
 		box-shadow:         inset 0 6px 6px -6px rgba(0,0,0,0.75),
 							inset 0 -6px 6px -6px rgba(0,0,0,0.75);*/
 	}
-	.grey h1{
+	.grey h1 {
 		color:#fff;
 		text-shadow:0 1px 2px rgba(0,0,0,0.5);
 	}
-	.grey h2{
+	.grey h2 {
 		text-shadow:0 1px 2px rgba(0,0,0,0.5);
 	}
-	.grey .subHeading{
+	.grey .subHeading {
 		color:#d9e7fb;
 		text-shadow:0 1px 1px rgba(0,0,0,0.5);
 	}
-	.grey a{color:#fff;}
-	.btn{
+	.grey a {color:#fff;}
+	.btn {
 		position:relative;
 		display:inline-block;
 		padding:0.278em;
@@ -422,6 +422,17 @@
 		display:block;
 		background:#eaeaea;
 	}
+	.gifFirstPosition{
+		margin-left: 10%;
+	}
+	.gifPosition{
+		display: inline;
+		width: 32%;
+		margin-left: 1%;
+		align-content: center;
+		vertical-align: middle;
+		align-self: center;
+	}
 	.imgHolder{
 		display:inline-block;
 		padding:1px;
@@ -449,14 +460,18 @@
 		width:100%;
 		height: 100%;
 		display: table;
-		position: absolute;
+		position: relative;
 		top: 0%;
 		bottom:0%;
 		vertical-align: middle;
-		max-height: 768px;
+		align-content: center;
 	}
 	#content{
-		padding:0 0 0;
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		min-width: 960px;
 	}
 
 	.socialbutton {
@@ -467,38 +482,6 @@
 		margin-right: auto;
 		background-size: contain;
 		background-repeat: no-repeat;
-	}
-	.twitter
-	{
-		background-image: url('../img/behemuttLogo.png');
-	}
-	.twitter:hover
-	{
-		background-image: url('../img/behemuttLogoInverted.png');
-	}
-	.facebook
-	{
-		background-image: url('../img/behemuttLogo.png')
-	}
-	.facebook:hover
-	{
-		background-image: url('../img/behemuttLogoInverted.png')
-	}
-	.behemutt
-	{
-		background-image: url('../img/behemuttLogo.png')
-	}
-	.behemutt:hover
-	{
-		background-image: url('../img/behemuttLogoInverted.png')
-	}
-	.devlog
-	{
-		background-image: url('../img/behemuttLogo.png')
-	}
-	.devlog:hover
-	{
-		background-image: url('../img/behemuttLogo.png')
 	}
 	
 	.socialLink{
@@ -529,45 +512,33 @@
 	}
 	/*#footer .copy{float:right;}*/
 }
-@media all and(max-width:1920px)
-{
-	#pagewidth{
-		width:100%;
-		height: 100%;
-		display: table;
-		position: absolute;
-		top: 1%;
-		bottom:1%;
-		vertical-align: middle;
-		max-height: 1080p;
-	}
-	
-	.center {
-		max-width:1920px;
-		vertical-align: center;
-		width:100%;
-		height: auto;
-		margin:auto auto;
-	}
-}
+
 @media all and (max-width: 1024px){
+	
 }
+
 @media all and (max-width: 960px){
-	.center{
-		padding:0 10px;
-		width:auto;
-		height: auto;
-	}
-	.buttons{font-size:11px;}
-	#content{padding:0%;}
-}
-@media all and (max-width: 780px){
 	body{font-size:13px;}
-	.buttons{font-size:9px;}
-	h1{font-size:3.5em;}
-	.subHeading{font-size:2em;}
+	.columns > div,
+	.columns > article{
+		float:none;
+		margin:0;
+		width:100%;
+	}
+	.buttons{font-size:7px;}
+	
+	h1{font-size:3em;}
+	.subHeading{font-size:1.75em;}
+	
+	#content{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -20%);
+		min-width: 600px;
+	}
 }
-@media all and (max-width: 504px){
+@media all and (max-width: 700px){
 	body{font-size:12px;}
 	.columns > div,
 	.columns > article{
@@ -579,6 +550,14 @@
 	
 	h1{font-size:3em;}
 	.subHeading{font-size:1.75em;}
+	
+	#content{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -30%);
+		min-width: 300px;
+	}
 }
 @media all and (max-width: 320px){
 	.buttons > span{display:none;}
@@ -586,16 +565,4 @@
 	.buttons{margin-top:2em;}
 	h1{font-size:2.5em;}
 	.subHeading{font-size:1.5em;}
-}
-@media all
-	and (min-device-width: 768px)
-	and (max-device-width: 1024px){
-	#header{
-		padding:2px 0 0;
-		height:0;
-		overflow:hidden;
-		position:static;
-	}
-	#content{padding:0;}
-	
 }
