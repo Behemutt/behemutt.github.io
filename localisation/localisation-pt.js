@@ -1,0 +1,1 @@
+greeting = 'Olá (pt)';
