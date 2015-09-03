@@ -499,7 +499,8 @@
 		overflow:hidden;
 		padding:1% 0%;
 		color:#fff;
-		background-color: #202020;
+		bottom:0;
+		/*background-color: #202020;*/
 		line-height:100%;
 		text-align: center;
 	}
@@ -535,7 +536,7 @@
 	}
 	
 	.innerContent{
-		max-width: 600px;
+		max-width: 350px;
 		position: relative;
 		top:0;
 		left:50%;
@@ -564,7 +565,7 @@
 	}
 	
 	.innerContent{
-		 max-width: 300px;
+		max-width: 300px;
 		position: relative;
 		top:0;
 		left:50%;
