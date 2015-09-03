@@ -61,8 +61,3 @@ function initScrollNav(_options){
 		}
 	});
 }
-
-$(window).on('resize', function(){
-      var win = $(this); //this = window
-      console.log(win.width());
-});

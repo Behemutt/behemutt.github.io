@@ -422,17 +422,6 @@
 		display:block;
 		background:#eaeaea;
 	}
-	.gifFirstPosition{
-		margin-left: 10%;
-	}
-	.gifPosition{
-		display: inline;
-		width: 32%;
-		margin-left: 1%;
-		align-content: center;
-		vertical-align: middle;
-		align-self: center;
-	}
 	.imgHolder{
 		display:inline-block;
 		padding:1px;
@@ -462,7 +451,6 @@
 		display: table;
 		position: relative;
 		top: 0%;
-		bottom:0%;
 		vertical-align: middle;
 		align-content: center;
 	}
@@ -471,7 +459,15 @@
 		top:50%;
 		left:50%;
 		transform: translate(-50%, -50%);
-		min-width: 960px;
+		width: 100%;
+	}
+	
+	.innerContent{
+		max-width: 960px;
+		position: relative;
+		top:0;
+		left:50%;
+		transform: translate(-50%, 0);
 	}
 
 	.socialbutton {
@@ -499,7 +495,7 @@
 	}
 
 	#footer{
-		width:100%;
+		width: 100%;
 		overflow:hidden;
 		padding:1% 0%;
 		color:#fff;
@@ -535,7 +531,15 @@
 		top:0;
 		left:50%;
 		transform: translate(-50%, 0%);
-		min-width: 600px;
+		width: 100%
+	}
+	
+	.innerContent{
+		max-width: 600px;
+		position: relative;
+		top:0;
+		left:50%;
+		transform: translate(-50%, 0);
 	}
 }
 @media all and (max-width: 720px){
@@ -556,7 +560,15 @@
 		top: 0;
 		left:50%;
 		transform: translate(-50%, 0%);
-		min-width: 300px;
+		width: 100%;
+	}
+	
+	.innerContent{
+		 max-width: 300px;
+		position: relative;
+		top:0;
+		left:50%;
+		transform: translate(-50%, 0);
 	}
 }
 @media all and (max-width: 320px){
