@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Mana Spark</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1,height=device-height">
-<link rel="stylesheet" type="text/css" href="css/default.css" media="all">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<!--<script src="js/jquery-1.7.2.min.js"></script>-->
-<script type="text/javascript" language="JavaScript" src="js/jquery.i18n.properties.min.js"></script>
-<script src="js/default.js"></script>
 
-<script>
+<head>
+  <title>Mana Spark</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1,height=device-height">
+  <link rel="stylesheet" type="text/css" href="css/default.css" media="all">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <!--<script src="js/jquery-1.7.2.min.js"></script>-->
+  <script type="text/javascript" language="JavaScript" src="js/jquery.i18n.properties.min.js"></script>
+  <script src="js/default.js"></script>
+
+  <script>
     jQuery.i18n.properties({
         name: 'Strings',
         path: 'strings/',
         language: 'en',
     });
-</script>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  </script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
@@ -29,64 +31,88 @@
   ga('create', 'UA-67068724-1', 'auto');
   ga('send', 'pageview');
 
-</script>
 
-<!--[if lt IE 9]>
+  /*document.getElementById('facebookLink').onclick = function() {
+    //ga('send', 'event', 'button', 'click', 'nav-buttons');
+    alert('test');
+  };*/
+  </script>
+
+  <!--[if lt IE 9]>
 <script src="js/html5.js"></script>
 <script src="js/respond.min.js"></script>
 <![endif]-->
 </head>
+
 <body>
-<div id="pagewidth">
-  <div id="content">
-    <div class="innerContent">
-    <section class="row">
-      <div class="center">
-        <h1>MANA SPARK</h1>
-        <strong class="subHeading"></strong>
+  <div id="pagewidth">    
+    <div id="content">
+      <div class="innerContent">
+        <section class="row">
+          <div class="center">
+            <h1>MANA SPARK</h1>
+            <strong class="subHeading"></strong>
+          </div>
+        </section>
+        <section id="gifs" class="row">
+          <div class="center">
+            <div class="columns">
+              <div class="oneThird">
+                <div class="imgHolder fullWidth"><img src="img/gameplay00.gif" alt=""></div>
+              </div>
+              <div class="oneThird">
+                <div class="imgHolder fullWidth"><img src="img/gameplay01.gif" alt=""></div>
+              </div>
+              <div class="oneThird">
+                <div class="imgHolder fullWidth"><img src="img/gameplay02.gif" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="description" class="row">
+          <div class="center descriptionText">
+            <h3><script>document.write(gameDesc); document.write(getRandomPhrase());</script></h3>
+          </div>
+        </section>
+        <section id="social" class="row">
+          <div class="center">
+            <div class="columns">
+              <div class="oneThird">
+                <a id="facebookLink" target="_blank" href="https://www.facebook.com/behemutt?fref=ts" class="socialLink">
+                <script>document.getElementById("facebookLink").onclick = function()
+                {
+                  ga('social', 'facebookLink');
+                };</script>                
+                Facebook
+                </a>
+              </div>
+              <div class="oneThird">
+                <a id="twitterLink" target="_blank" href="https://twitter.com/behemutt" class="socialLink">
+                <script>document.getElementById("facebookLink").onclick = function()
+                {
+                  ga('social', 'twitterLink');
+                };</script> 
+                Twitter
+                </a>
+              </div>
+              <div class="oneThird">
+                <a id="devlogLink" target="_blank" href="http://forums.tigsource.com/index.php?topic=50207.0" class="socialLink">
+                <script>document.getElementById("facebookLink").onclick = function()
+                {
+                  ga('social', 'devlogLink');
+                };</script> 
+                Devlog
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </section>
-    <section id="gifs" class="row">
-      <div class="center">
-        <div class="columns">
-          <div class="oneThird">
-            <div class="imgHolder fullWidth"><img src="img/gameplay00.gif" alt=""></div>
-          </div>
-          <div class="oneThird">
-            <div class="imgHolder fullWidth"><img src="img/gameplay01.gif" alt=""></div>
-          </div>
-          <div class="oneThird">
-            <div class="imgHolder fullWidth"><img src="img/gameplay02.gif" alt=""></div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="description" class="row">
-      <div class="center descriptionText">
-        <h3>
-        <script>document.write(gameDesc); document.write(getRandomPhrase());</script> 
-        </h3>
-      </div>
-    </section>
-    <section id="social" class="row">
-      <div class="center">
-        <div class="columns">
-          <div class="oneThird">
-            <a target="_blank" href="https://www.facebook.com/behemutt?fref=ts" class="socialLink">Facebook</a>
-          </div>
-          <div class="oneThird">
-            <a target="_blank" href="https://twitter.com/behemutt" class="socialLink">Twitter</a>
-          </div>
-          <div class="oneThird">
-            <a target="_blank" href="http://forums.tigsource.com/index.php?topic=50207.0" class="socialLink">Devlog</a>
-          </div>
-        </div>
-      </div>
-    </section>
+      <footer id="footer">
+        <div>&copy; Copyright 2015 <a target="_blank" href="http://behemutt.com">Behemutt</a>. All Rights Reserved. </div>
+      </footer>
     </div>
-    <footer id="footer">
-      <div>&copy; Copyright 2015 <a  target="_blank" href="http://behemutt.com">Behemutt</a>. All Rights Reserved. </div>
-    </footer>
   </div>
-</div>
+</body>
+
 </html>
