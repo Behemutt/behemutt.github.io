@@ -460,8 +460,8 @@
 		height: 100%;
 		display: table;
 		position: relative;
-		top: 0%;
-		vertical-align: middle;
+		top: 10%;
+		vertical-align: center;
 		align-content: center;
 	}
 	#content{
