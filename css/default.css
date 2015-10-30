@@ -524,6 +524,12 @@
 	/*#footer .copy{float:right;}*/
 }
 
+@media all and (min-width: 1800px){
+	#content{
+		top:50%;
+	}
+}
+
 @media all and (max-width: 1024px){
 	
 }
