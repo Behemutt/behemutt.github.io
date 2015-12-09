@@ -66,19 +66,3 @@ function pad(num, size) {
     var s = "00000" + num;
     return s.substr(s.length-size);
 }
-
-function getRandomPhrase()
-{
-	var randomStrings =
-	[
-		'make you call for your mama.',
-		'make you go back play that game with candies.',
-		'make you chill to the bone.',
-		'make you wish you were not here.',
-		'make you their meal.',
-		'take your flesh out of your bones.',
-		'break your bones then your soul.',
-		'make you lose and start all over.'
-	];
-	return randomStrings[Math.floor(Math.random() * randomStrings.length)];
-}
