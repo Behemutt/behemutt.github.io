@@ -59,23 +59,16 @@
     <div id="content">
       <div class="innerContent">
         <section class="row">
-          <div class="center">
+          <div class="manaSparkTitle">
             <div class="imgHolder"><img src="img/logo.png" alt=""></div>
           </div>
         </section>
         <section id="gifs" class="row">
           <div class="center">
             <div class="columns">
-              <div class="oneThird">
-                <!--div class="imgHolder fullWidth"><img src="img/img-news01.jpg" alt=""></div-->
-                <div class="imgHolder fullWidth"><img src="img/gameplay00.gif" alt=""></div>
-              </div>
-              <div class="oneThird">
-                <div class="imgHolder fullWidth"><img src="img/gameplay01.gif" alt=""></div>
-              </div>
-              <div class="oneThird">
-                <div class="imgHolder fullWidth"><img src="img/gameplay02.gif" alt=""></div>
-              </div>
+                <div class="center">
+                  <img src="img/main_gif.gif" alt="">
+                </div>
             </div>
           </div>
         </section>
@@ -84,10 +77,15 @@
             <h3><script>document.write(gameDesc); document.write(getRandomPhrase());</script></h3>
           </div>
         </section>
+        <section id="video" class="row">
+          <div class="videoWrapper">
+            <iframe width="839" height="474" src="https://www.youtube.com/embed/F5TavUZavUU" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </section>
         <section id="social" class="row">
           <div class="center">
             <div class="columns">
-              <div class="oneThird">
+              <div class="oneForth">
                 <a id="facebookLink" target="_blank" href="https://www.facebook.com/behemutt?fref=ts" class="socialLink">
                 <script>document.getElementById("facebookLink").onclick = function()
                 {
@@ -96,7 +94,7 @@
                 Facebook
                 </a>
               </div>
-              <div class="oneThird">
+              <div class="oneForth">
                 <a id="twitterLink" target="_blank" href="https://twitter.com/behemutt" class="socialLink">
                 <script>document.getElementById("facebookLink").onclick = function()
                 {
@@ -105,13 +103,22 @@
                 Twitter
                 </a>
               </div>
-              <div class="oneThird">
+              <div class="oneForth">
                 <a id="devlogLink" target="_blank" href="http://forums.tigsource.com/index.php?topic=50207.0" class="socialLink">
                 <script>document.getElementById("facebookLink").onclick = function()
                 {
                   ga('social', 'devlogLink');
                 };</script> 
                 Devlog
+                </a>
+              </div>
+              <div class="oneForth">
+                <a id="presskitLink" target="_blank" href="http://press.behemutt.com/sheet.php?p=mana_spark" class="socialLink">
+                <script>document.getElementById("facebookLink").onclick = function()
+                {
+                  ga('press', 'presskitLink');
+                };</script> 
+                PressKit
                 </a>
               </div>
             </div>
@@ -122,7 +129,7 @@
           <div id="mc_embed_signup">
           <form action="//behemutt.us12.list-manage.com/subscribe/post?u=dffda55cb48018d7dfbff1e8e&amp;id=18cfd9ee83" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
               <div id="mc_embed_signup_scroll">
-                <label for="mce-EMAIL">Would you dare to face this challenge? Subscribe to our mailing list.</label>
+                <label for="mce-EMAIL">Keep up with the project updates. Subscribe to our mailing list.</label>
                 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
                   <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                   <div style="position: absolute; left: -5000px;"><input type="text" name="b_dffda55cb48018d7dfbff1e8e_18cfd9ee83" tabindex="-1" value=""></div>
