@@ -457,6 +457,20 @@
 		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 		box-sizing: border-box;         /* Opera/IE 8+ */
 	}
+    
+    .ssHolder{
+		display:inline-block;
+		padding:1px;
+		/*background:#fff;*/
+		/*border:6px solid #cecece;*/
+		margin-bottom:1em;
+		max-width:24%;
+		overflow:hidden;
+		
+		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+		box-sizing: border-box;         /* Opera/IE 8+ */
+	}
 	* +html .imgHolder{
 		max-width:93.5%;
 		border-width:3%;
@@ -478,7 +492,7 @@
 	}
 	#content{
 		position: absolute;
-		top:69%;
+		top:76%;
 		left:50%;
 		transform: translate(-50%, -31%);
 		width: 100%;
