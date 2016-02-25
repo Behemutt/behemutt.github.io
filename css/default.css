@@ -67,7 +67,16 @@
 		text-align: justify center;
 		color: rgb(235,235,235);
 	}
-	h4 {
+    h4 {
+		/*font:18px/1.5em sans-serif;*/
+		font-family: 'Droid Serif';/*Seraphimb1;/*'Times New Roman', Times, serif;*/
+		font-style: normal;
+		font-weight: lighter;
+		margin:0 0 0.55em;
+		text-align: justify center;
+		color: rgb(235,235,235);
+	}
+	/*h4 {
 		/*font:18px/1.5em sans-serif;*/
 		font-family: 'Droid Serif';/*Seraphimb1;/*'Times New Roman', Times, serif;*/
 		font-style: normal;
@@ -76,7 +85,7 @@
 		text-align: left;
 		transform: translate(15%, 0%);
 		color: rgb(235,235,235);
-	}
+	}*/
 	.manaSparkTitle
 	{
 		width:60%;
@@ -492,7 +501,7 @@
 	}
 	#content{
 		position: absolute;
-		top:76%;
+		top:86%;
 		left:50%;
 		transform: translate(-50%, -31%);
 		width: 100%;
@@ -528,6 +537,12 @@
 	.descriptionText{
 		display:block;
 		line-height: 2em;
+	}
+    
+    .poemText{
+		display:block;
+		line-height: 2em;
+        font-style: italic;
 	}
 
 	#footer{
