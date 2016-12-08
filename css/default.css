@@ -108,11 +108,11 @@
 		background: url("/img/logo.png");
         background-repeat: no-repeat;
         background-position: bottom;
-        background-size: 60%;
+        background-size: 50%;
         width: 1640px;
         height: 500px;
-        max-width: 80%;
-        max-height: 70%;
+        max-width: 36%;
+        max-height: 29%;
 		margin: auto auto;
 	}
     
@@ -242,7 +242,7 @@
 	.row{
 		width:100%;
 		/*background:rgb(22,20,28);*/
-		background:rgba(19,18,21,0.75);		
+		/*background:rgba(19,18,21,0.85);*/		
 		padding:0.8% 0;
 	}
 
@@ -590,6 +590,7 @@
 		top:0;
 		left:50%;
 		transform: translate(-50%, 0);
+        background:rgba(19,18,21,0.85);		
 	}
 
 	.socialbutton {
@@ -732,6 +733,17 @@
 	}
 }
 
+@media (min-width: 768px) and (max-width: 1800px) {    
+    .manaSparkTitle
+	{
+        height: 480px;
+        background-size: 70%;
+		margin: auto auto;
+        max-width: 36%;
+        max-height: 29%;
+	}
+}
+
 @media (min-width: 768px) and (max-width: 1024px){
     #content{
 		transform: translate(0%, -11.5%);
@@ -761,7 +773,7 @@
 	.manaSparkTitle
 	{
         height: 180px;
-        background-size: 70%;
+        background-size: 60%;
 		margin: auto auto;
 	}
     
@@ -864,7 +876,7 @@
     .manaSparkTitle
 	{
         height: 180px;
-        background-size: 75%;
+        background-size: 65%;
 		margin: auto auto;
 	}
     
@@ -905,7 +917,7 @@
     .manaSparkTitle
 	{
         height: 160px;
-        background-size: 70%;
+        background-size: 60%;
 		margin: auto auto;
 	}
     
